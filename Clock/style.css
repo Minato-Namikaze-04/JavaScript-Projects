@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: url("clock.png");
+    background-size: cover;
+    position: relative;
+}
+
+
+.hour {
+
+    height: 4.5rem;
+    border: 2px solid black;
+}
+
+.minute {
+    height: 7rem;
+    border: 1.6px solid black;
+}
+
+.second {
+    height: 7rem;
+    border: 1px solid black;
+}
+
+.time {
+    position: absolute;
+    bottom: 50%;
+    left: 49.5%;
+    transform-origin: bottom;
+}
